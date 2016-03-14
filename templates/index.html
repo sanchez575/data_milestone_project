@@ -2,14 +2,29 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Hello, World!</title>
+		<title>Index</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div>
-  			<h1>Hello, World!</h1>
+  			<h1>Enter stock (e.g. AAPL)</h1>
+
+  			<form id='userinfoform_lulu' method='post' action='index' >
+				<p>
+					Stock: <input type='text' name='stock_form' />
+				</p>
+				<p>
+					<input type="checkbox" name="options" value="Close">Closing price<br>
+					<input type="checkbox" name="options" value="Adj. Close">Adjusted closing price<br>
+					<input type="checkbox" name="options" value="Open">Opening price<br>
+					<input type="checkbox" name="options" value="Adj. Open">Adjusted opening price<br>
+				</p>
+				<p>
+					<input type='submit' value='Submit' />
+				</p>
+			</form>
 		</div>
 	</body>
 </html>
